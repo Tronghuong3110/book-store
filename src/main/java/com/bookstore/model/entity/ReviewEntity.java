@@ -17,11 +17,11 @@ import java.util.Date;
 public class ReviewEntity {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id", columnDefinition = "bigint")
 	private Long id;
 	
-	@Column(name = "comment", columnDefinition = "ntext")
+	@Column(name = "comment", columnDefinition = "text")
 	private String comment;
 	
 	@Column(name = "star")

@@ -19,7 +19,7 @@ import javax.persistence.Table;
 public class RoleEntity {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id", columnDefinition = "Bigint")
 	private Long id;
 	

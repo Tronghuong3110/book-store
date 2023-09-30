@@ -14,7 +14,7 @@ import javax.persistence.Table;
 public class Recipient_addressEntity {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id", columnDefinition = "bigint")
 	private Long id;
 	
@@ -36,7 +36,7 @@ public class Recipient_addressEntity {
 	@Column(name = "phone_receiver", length = 12)
 	private String phoneReceiver;
 
-	@Column(name = "note_bill", columnDefinition = "nText")
+	@Column(name = "note_bill", columnDefinition = "Text")
 	private String noteBill;
 	
 	@OneToOne
